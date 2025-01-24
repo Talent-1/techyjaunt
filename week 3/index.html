@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Time Tracking Dashboard</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <main class="container">
+        <section class="profile-card">
+            <div class="profile-info">
+                <img src="/images/image-jeremy.png" alt="Jeremy Robson" class="profile-image">
+                <div class="report-for">
+                    <p>Report for</p>
+                    <h1>Jeremy Robson</h1>
+                </div>
+            </div>
+            <div class="time-options">
+                <button data-timeframe="daily">Daily</button>
+                <button data-timeframe="weekly" class="active">Weekly</button>
+                <button data-timeframe="monthly">Monthly</button>
+            </div>
+        </section>
+
+        <section class="activity-grid">
+            <div class="activity-card work">
+                <div class="activity-background">
+                    <img src="/images/icon-work.svg" alt="Work Icon" class="activity-icon">
+                </div>
+                <div class="activity-details">
+                    <div class="activity-header">
+                        <h2 class="activity-title">Work</h2>
+                        <img src="/images/icon-ellipsis.svg" alt="Ellipsis Icon" class="ellipsis-icon">
+                    </div>
+                    <div class="activity-time">
+                        <p class="current-time">32hrs</p>
+                        <p class="previous-time">Last Week - 36hrs</p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="activity-card play">
+                <div class="activity-background">
+                    <img src="/images/icon-play.svg" alt="Play Icon" class="activity-icon">
+                </div>
+                <div class="activity-details">
+                    <div class="activity-header">
+                        <h2 class="activity-title">Play</h2>
+                        <img src="/images/icon-ellipsis.svg" alt="Ellipsis Icon" class="ellipsis-icon">
+                    </div>
+                    <div class="activity-time">
+                        <p class="current-time">10hrs</p>
+                        <p class="previous-time">Last Week - 8hrs</p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="activity-card study">
+                <div class="activity-background">
+                    <img src="/images/icon-study.svg" alt="Study Icon" class="activity-icon">
+                </div>
+                <div class="activity-details">
+                    <div class="activity-header">
+                        <h2 class="activity-title">Study</h2>
+                        <img src="/images/icon-ellipsis.svg" alt="Ellipsis Icon" class="ellipsis-icon">
+                    </div>
+                    <div class="activity-time">
+                        <p class="current-time">4hrs</p>
+                        <p class="previous-time">Last Week - 7hrs</p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="activity-card exercise">
+                <div class="activity-background">
+                    <img src="/images/icon-exercise.svg" alt="Exercise Icon" class="activity-icon">
+                </div>
+                <div class="activity-details">
+                    <div class="activity-header">
+                        <h2 class="activity-title">Exercise</h2>
+                        <img src="/images/icon-ellipsis.svg" alt="Ellipsis Icon" class="ellipsis-icon">
+                    </div>
+                    <div class="activity-time">
+                        <p class="current-time">4hrs</p>
+                        <p class="previous-time">Last Week - 5hrs</p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="activity-card social">
+                <div class="activity-background">
+                    <img src="/images/icon-social.svg" alt="Social Icon" class="activity-icon">
+                </div>
+                <div class="activity-details">
+                    <div class="activity-header">
+                        <h2 class="activity-title">Social</h2>
+                        <img src="/images/icon-ellipsis.svg" alt="Ellipsis Icon" class="ellipsis-icon">
+                    </div>
+                    <div class="activity-time">
+                        <p class="current-time">5hrs</p>
+                        <p class="previous-time">Last Week - 10hrs</p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="activity-card self-care">
+                <div class="activity-background">
+                    <img src="/images/icon-self-care.svg" alt="Self Care Icon" class="activity-icon">
+                </div>
+                <div class="activity-details">
+                    <div class="activity-header">
+                        <h2 class="activity-title">Self Care</h2>
+                        <img src="/images/icon-ellipsis.svg" alt="Ellipsis Icon" class="ellipsis-icon">
+                    </div>
+                    <div class="activity-time">
+                        <p class="current-time">2hrs</p>
+                        <p class="previous-time">Last Week - 2hrs</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+    <script src="app.js" type="module"></script>
+</body>
+</html>
