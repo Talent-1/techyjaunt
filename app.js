@@ -6,7 +6,7 @@ document.addEventListener('DOMContentLoaded', () => {
 
   function updateActivityCards(timeframe) {
     activityCards.forEach((card) => {
-      const category = card.classList[1]; // Get category from class (e.g., "work")
+      const category = card.querySelector('.activity-title').textContent.trim(); // Get category from the card title
       const categoryData = data.find(item => item.title === category);
 
       if (categoryData) {
@@ -16,7 +16,7 @@ document.addEventListener('DOMContentLoaded', () => {
         card.querySelector('.current-time').textContent = `${currentTime}hrs`;
         card.querySelector('.previous-time').textContent = `Last Week - ${previousTime}hrs`;
       } else {
-        console.error(`Category data not found for ${categoryName}`);
+        console.error(`Category data not found for ${category}`);
       }
     });
   }
@@ -29,12 +29,6 @@ document.addEventListener('DOMContentLoaded', () => {
       timeOptions.forEach(btn => btn.classList.remove('active'));
       button.classList.add('active');
       const timeframe = button.getAttribute('data-timeframe');
-      updateActivityCards(timeframe); 
-    });
-  });
-});
-      button.classList.add("active");
-      const timeframe = button.getAttribute("data-timeframe");
       updateActivityCards(timeframe);
     });
   });
