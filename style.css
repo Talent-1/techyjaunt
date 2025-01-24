@@ -77,6 +77,8 @@ body {
     font-size: 14px;
     font-weight: 500;
     margin-left: 10px;
+    display: block; /* Added display: block; */
+    padding: 5px 10px; /* Added padding for better clickability */
 }
 
 .time-options .active {
